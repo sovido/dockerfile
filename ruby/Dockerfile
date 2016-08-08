@@ -1,9 +1,9 @@
 FROM alpine:3.4
 MAINTAINER Dirk Siemers <dirk@sovido.de>
 
-ENV BUILD_PACKAGES bash curl-dev ruby-dev build-base libc-dev
+ENV BUILD_PACKAGES bash curl-dev ruby-dev build-base
 ENV RUBY_PACKAGES ruby ruby-io-console ruby-bundler
-ENV EXTRA_PACKAGES libxml2-dev libxslt-dev libev-dev git
+ENV EXTRA_PACKAGES libxml2-dev libxslt-dev libev-dev libffi-dev git
 
 # Update and install all of the required packages.
 # At the end, remove the apk cache
