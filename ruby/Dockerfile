@@ -1,8 +1,8 @@
 FROM alpine:3.4
 MAINTAINER Dirk Siemers <dirk@sovido.de>
 
-ENV BUILD_PACKAGES bash curl-dev ruby-dev build-base
-ENV RUBY_PACKAGES ruby ruby-io-console ruby-bundler
+ENV BUILD_PACKAGES bash curl-dev ruby-dev build-base tzdata
+ENV RUBY_PACKAGES ruby ruby-io-console ruby-bundler ruby-bigdecimal
 ENV EXTRA_PACKAGES libxml2-dev libxslt-dev libev-dev libffi-dev git
 
 # Update and install all of the required packages.
