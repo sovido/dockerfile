@@ -1,4 +1,4 @@
-FROM ruby:2.4.1
+FROM ruby:2.2.7
 MAINTAINER Dirk Siemers <dirk@sovido.de>
 
 RUN apt-get update -qq && apt-get install -y build-essential
